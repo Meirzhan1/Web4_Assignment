@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiniPinterest</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-white bg-white w-100 fixed-top shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand me-4" href="index.html">
+          <img src="Logo.png" alt="Logotype" class="logo" style="width: 40px; height: 40px;">
+          AsuStar
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="upload.html">Upload</a>
+            </li>
+          </ul>
+          
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <input type="search" class="form-control form-control-sm" placeholder="Search..." aria-label="Search" style="border-radius: 0.25rem 0 0 0.25rem;">
+              <button class="btn btn-light btn-sm" type="submit" style="border-radius: 0 0.25rem 0.25rem 0;">Find</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <div class="grid-layout pt-5 mt-3"> 
+    
+    <input type="checkbox" id="sidebar-toggle" hidden>
+
+    <aside class="sidebar">
+    <ul>
+      <li>
+        <a href="index.html"><img src="images/Category.png" alt="Category" class="nav-icon">ㅤCategory</a>
+      </li>
+
+      <li>
+        <a href="profile.html"><img src="images/Favvv.png" alt="Category" class="nav-icon">ㅤFavorites</a>
+      </li>
+
+      <li>
+        <a href="about.html"><img src="images/Settings.png" alt="Settings" class="nav-icon">ㅤInfo</a>
+      </li>
+    </ul>
+    </aside>
+
+    <main class="main">
+      <div class="container my-4">
+        <div id="imageCarousel" class="carousel slide shadow-lg" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-4"><img src="https://picsum.photos/400/300?random=101" class="d-block w-100 rounded" alt="Carousel image 1"></div>
+                <div class="col-4"><img src="https://picsum.photos/400/300?random=102" class="d-block w-100 rounded" alt="Carousel image 2"></div>
+                <div class="col-4"><img src="https://picsum.photos/400/300?random=103" class="d-block w-100 rounded" alt="Carousel image 3"></div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-4"><img src="https://picsum.photos/400/300?random=104" class="d-block w-100 rounded" alt="Carousel image 4"></div>
+                <div class="col-4"><img src="https://picsum.photos/400/300?random=105" class="d-block w-100 rounded" alt="Carousel image 5"></div>
+                <div class="col-4"><img src="https://picsum.photos/400/300?random=106" class="d-block w-100 rounded" alt="Carousel image 6"></div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-4"><img src="https://picsum.photos/400/300?random=107" class="d-block w-100 rounded" alt="Carousel image 7"></div>
+                <div class="col-4"><img src="https://picsum.photos/400/300?random=108" class="d-block w-100 rounded" alt="Carousel image 8"></div>
+                <div class="col-4"><img src="https://picsum.photos/400/300?random=109" class="d-block w-100 rounded" alt="Carousel image 9"></div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      
+      <div class="gallery">
+        <div class="card shadow">
+          <img src="https://picsum.photos/200/250?random=1" alt="Фото 1">
+          <div class="overlay">
+                <button class="btn btn-sm btn-light border"><img src="images/Fav.png" alt="Избранное"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Download.png" alt="Сохранить"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Share.png" alt="Поделиться"></button>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <img src="https://picsum.photos/200/300?random=2" alt="Фото 2">
+          <div class="overlay">
+                <button class="btn btn-sm btn-light border"><img src="images/Fav.png" alt="Избранное"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Download.png" alt="Сохранить"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Share.png" alt="Поделиться"></button>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <img src="https://picsum.photos/200/280?random=3" alt="Фото 3">
+          <div class="overlay">
+                <button class="btn btn-sm btn-light border"><img src="images/Fav.png" alt="Избранное"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Download.png" alt="Сохранить"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Share.png" alt="Поделиться"></button>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <img src="https://picsum.photos/600/900?random=4" alt="Фото 4">
+          <div class="overlay">
+                <button class="btn btn-sm btn-light border"><img src="images/Fav.png" alt="Избранное"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Download.png" alt="Сохранить"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Share.png" alt="Поделиться"></button>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <img src="https://picsum.photos/200/260?random=5" alt="Фото 5">
+          <div class="overlay">
+                <button class="btn btn-sm btn-light border"><img src="images/Fav.png" alt="Избранное"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Download.png" alt="Сохранить"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Share.png" alt="Поделиться"></button>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <img src="https://picsum.photos/200/310?random=6" alt="Фото 6">
+          <div class="overlay">
+                <button class="btn btn-sm btn-light border"><img src="images/Fav.png" alt="Избранное"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Download.png" alt="Сохранить"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Share.png" alt="Поделиться"></button>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <img src="https://picsum.photos/200/270?random=7" alt="Фото 7">
+          <div class="overlay">
+                <button class="btn btn-sm btn-light border"><img src="images/Fav.png" alt="Избранное"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Download.png" alt="Сохранить"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Share.png" alt="Поделиться"></button>
+          </div>
+        </div>
+
+        <div class="card shadow"> 
+          <img src="https://picsum.photos/200/280?random=8" alt="Фото 8">
+          <div class="overlay">
+                <button class="btn btn-sm btn-light border"><img src="images/Fav.png" alt="Избранное"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Download.png" alt="Сохранить"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Share.png" alt="Поделиться"></button>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <img src="https://picsum.photos/200/290?random=9" alt="Фото 9">
+          <div class="overlay">
+                <button class="btn btn-sm btn-light border"><img src="images/Fav.png" alt="Избранное"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Download.png" alt="Сохранить"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Share.png" alt="Поделиться"></button>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <img src="https://picsum.photos/200/300?random=10" alt="Фото 10">
+          <div class="overlay">
+                <button class="btn btn-sm btn-light border"><img src="images/Fav.png" alt="Избранное"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Download.png" alt="Сохранить"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Share.png" alt="Поделиться"></button>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <img src="https://picsum.photos/200/310?random=11" alt="Фото 11">
+          <div class="overlay">
+                <button class="btn btn-sm btn-light border"><img src="images/Fav.png" alt="Избранное"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Download.png" alt="Сохранить"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Share.png" alt="Поделиться"></button>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <img src="https://picsum.photos/200/320?random=12" alt="Фото 12">
+          <div class="overlay">
+                <button class="btn btn-sm btn-light border"><img src="images/Fav.png" alt="Избранное"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Download.png" alt="Сохранить"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Share.png" alt="Поделиться"></button>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <img src="https://picsum.photos/200/330?random=13" alt="Фото 13">
+          <div class="overlay">
+                <button class="btn btn-sm btn-light border"><img src="images/Fav.png" alt="Избранное"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Download.png" alt="Сохранить"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Share.png" alt="Поделиться"></button>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <img src="https://picsum.photos/200/340?random=14" alt="Фото 14">
+          <div class="overlay">
+                <button class="btn btn-sm btn-light border"><img src="images/Fav.png" alt="Избранное"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Download.png" alt="Сохранить"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Share.png" alt="Поделиться"></button>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <img src="https://picsum.photos/200/350?random=15" alt="Фото 15">
+          <div class="overlay">
+                <button class="btn btn-sm btn-light border"><img src="images/Fav.png" alt="Избранное"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Download.png" alt="Сохранить"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Share.png" alt="Поделиться"></button>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <img src="https://picsum.photos/200/360?random=16" alt="Фото 16">
+          <div class="overlay">
+                <button class="btn btn-sm btn-light border"><img src="images/Fav.png" alt="Избранное"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Download.png" alt="Сохранить"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Share.png" alt="Поделиться"></button>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <img src="https://picsum.photos/200/370?random=17" alt="Фото 17">
+          <div class="overlay">
+                <button class="btn btn-sm btn-light border"><img src="images/Fav.png" alt="Избранное"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Download.png" alt="Сохранить"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Share.png" alt="Поделиться"></button>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <img src="https://picsum.photos/200/380?random=18" alt="Фото 18">
+          <div class="overlay">
+                <button class="btn btn-sm btn-light border"><img src="images/Fav.png" alt="Избранное"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Download.png" alt="Сохранить"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Share.png" alt="Поделиться"></button>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <img src="https://picsum.photos/200/390?random=19" alt="Фото 19">
+          <div class="overlay">
+                <button class="btn btn-sm btn-light border"><img src="images/Fav.png" alt="Избранное"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Download.png" alt="Сохранить"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Share.png" alt="Поделиться"></button>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <img src="https://picsum.photos/200/400?random=20" alt="Фото 20">
+          <div class="overlay">
+                <button class="btn btn-sm btn-light border"><img src="images/Fav.png" alt="Избранное"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Download.png" alt="Сохранить"></button>
+                <button class="btn btn-sm btn-light border"><img src="images/Share.png" alt="Поделиться"></button>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <p>© 2025 AsuStar | Team “Creatives”</p>
+      <p>Meirzhan, Alikhan</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
